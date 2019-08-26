@@ -116,17 +116,17 @@
  end
  
  def num_points_scored(name)
-  game_hash.each do | location, team |
-    team.each do | key, value |
-      if key == :players
-        value.each do | player |
-          if player[:player_name] == name
-          return player[:points]
-          end
-        end
-      end
-    end
-  end
+  # game_hash.each do | location, team |
+  #   team.each do | key, value |
+  #     if key == :players
+  #       value.each do | player |
+  #         if player[:player_name] == name
+  #         return player[:points]
+  #         end
+  #       end
+  #     end
+  #   end
+  # end
  end
  
  
