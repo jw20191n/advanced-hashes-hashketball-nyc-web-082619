@@ -111,6 +111,9 @@
 
  end
  
+ def all_players
+   game_hash[:home][:players].concat(game_hash[:away][:players])
+ end
  
  def num_points_scored(name)
   game_hash.each do | location, team |
