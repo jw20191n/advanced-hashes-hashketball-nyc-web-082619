@@ -129,7 +129,11 @@
   # end
   
   
-  
+    all_players.each do |player|
+      if player[:player_name] == name
+        return player[:points]
+      end
+    end
  end
  
  
